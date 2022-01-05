@@ -25,6 +25,7 @@ public class TestAop {
         listAdvisor = new ArrayList<>();
         //扫描所有的aop生成List 本身应该是
         try {
+            //
             aspect = Thread.currentThread().getContextClassLoader().loadClass("aop.aspect.LogAspect");
             //匹配他的注解  生成AdvisorList
             Method[] list = aspect.getMethods();
